@@ -25,6 +25,7 @@ along with this program; see the file COPYING. If not, see
 #define SYS_mdbg_call    573
 #define SYS_dynlib_dlsym 591
 #define SYS_dynlib_load  594
+#define SYS_dynlib_get_obj_member 649
 
 #define DYNLIB_LOAD(name, handle) __syscall(SYS_dynlib_load, name, 0, handle, 0)
 #define DYNLIB_DLSYM(handle, name, addr) __syscall(SYS_dynlib_dlsym, handle, name, addr)
