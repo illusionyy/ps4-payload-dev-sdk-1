@@ -53,6 +53,7 @@ jobs:
         $MAKE -C samples/kdump
         $MAKE -C samples/mntinfo
         $MAKE -C samples/ps
+        $MAKE -C samples/sdk_ver
       env:
           PS4_PAYLOAD_SDK: ${{ runner.tool_cache }}/ps4-payload-sdk
 
